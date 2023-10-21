@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* Desktop */
+
+body {
+    background-color: #d0e7d2;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: #618264;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #618264;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+p{
+    color: #618264;
+    font-weight: 300;
+}
+
+/* HEADER */
+
+.header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+nav {
+    display: flex;
+    /* background-color: black; */
+    min-height: 10vh;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+    color: #d0e7d2;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+ul {
+    display: flex;
+    padding: 2vh;
+    margin-right: 5px;
+    background-color: #618264;
+    border-radius: 30px;
+}
+
+li {
+    padding-right: 5vh;
+    padding-left: 5vh;
+}
+/* END HEADER */
+
+/* MAIN */
+
+.main {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.container #home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+
+.profile-picture {
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.profile-picture img {
+    background-color: #d0e7d2;
+    height: 550px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.content h1 {
+    font-size: 15vh;
+    color: #618264;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    font-size: 4vh;
+    margin-bottom: 20px;
+        
+}
+
+.content h2::before {
+    flex: 1;
+    content: "";
+    display: inline-block;
+    border: 1px solid #618264;
+    width: 15%;
+}
+
+.content p {
+    font-size: 3vh;
+    margin-bottom: 20px;
+}
+
+.text-content {
+    align-self: center;
+}
+
+
+.container-name {
+    padding-bottom: 3vh;
+}
+
+.btn {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    background-color: #618264;
+    border-radius: 5px;
+    color: #d0e7d2;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn i {
+    align-self: center;
+}
+
+.btn p {
+    font-size: 15px;
+    color: #d0e7d2;
+    align-self: flex-end;
+    padding-left: 10px;
+}
+
+#biography p {
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+#biography h1 {
+    text-align: center;
+}
+
+#biography h1::after {
+    content: "|";
+    display: block;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+/* END MAIN */
+
+/* FOOTER */
+.footer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.footer p {
+    text-align: center;
+}
+/* END FOOTER */

@@ -51,6 +51,14 @@ table {
 
 /* Desktop */
 
+@media (min-width: 1200px) {
+    #biography .container {
+        width: 1140px;
+        margin: 0 auto;
+        padding: 2vh 2vh;
+    }
+}
+
 body {
     background-color: #d0e7d2;
 }
@@ -122,7 +130,7 @@ li {
     margin-bottom: 5vh;
 }
 
-.container #home {
+#home .container {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -205,20 +213,47 @@ li {
     padding-left: 10px;
 }
 
-#biography p {
+#biography {
+    background-color: #618264;
+}
+
+
+#biography .title {
     text-align: center;
-    margin-bottom: 2vh;
+}
+
+#biography p {
+    color: #d0e7d2;
 }
 
 #biography h1 {
+    color: #d0e7d2;
     text-align: center;
 }
 
 #biography h1::after {
+    color: #d0e7d2;
     content: "|";
     display: block;
     font-size: 30px;
     font-weight: 200;
+}
+
+.kotak {
+    flex: 1;
+}
+
+.text-biography {
+    width: 50%;
+}
+
+.text-biography p {
+    font-size: 14px;
+    margin: 1vh;
+}
+
+.content-biography {
+    display: flex;
 }
 
 /* END MAIN */
